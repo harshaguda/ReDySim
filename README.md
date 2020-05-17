@@ -1,1 +1,3 @@
 # ReDySim
+
+![](demo.gif)
