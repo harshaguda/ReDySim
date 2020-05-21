@@ -1,5 +1,20 @@
 function ydot = link2mani(tspan,y0)
-m1 = 1; m2 = 1; a1 = 1; a2 = 1; g = 9.81; iner21 = m2*a1*a2;
+
+% app = load_app();
+
+% m1 = app.m1
+% m2 = app.m2 
+% a1 = app.a1
+% a2 = app.a2
+% [m1, m2, a1, a2] = load('variables2.mat');
+m1 = 1; m2 = 1; a1 = 1; a2 = 1;
+req_var = load('variables_2.mat');
+% [m1, m2, a1, a2] = req_var.sv;
+m1 = req_var.sv(1);
+m2 = req_var.sv(2);
+a1 = req_var.sv(3);
+a2 = req_var.sv(4);
+g = 9.81; iner21 = m2*a1*a2;
 tau1 = 0; tau2 = 0;
  
 th1 = y0(1); th2 = y0(2); th1d = y0(3); th2d = y0(4);
