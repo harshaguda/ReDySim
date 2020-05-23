@@ -1,3 +1,3 @@
 # ReDySim
 
-![](demo.gif)
+![](demo_2.gif)
